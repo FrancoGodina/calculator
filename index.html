@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Calculator</title>
+</head>
+<body class="page">
+    <div id="calculator">
+        <div id="mainbox">
+            <div id="upper">
+                <input type="text" id="display" name="display" value="" readonly >
+                <button type="button" id="clear" onclick=clearData()>CLEAR</button>
+                <button type="button" id="del" onclick=deleteChar()>DEL</button>
+            </div>
+            <div id="buttonContainer">
+                <button type="button" class="number" onclick="secondOperation();numberSeven()">7</button>
+                <button type="button" class="number" onclick="secondOperation();numberEight()">8</button>
+                <button type="button" class="number" onclick="secondOperation();numberNine()">9</button>
+                <button type="button" class="operator" onclick="clickCounter();operateIndicator();addOperator();">+</button>
+                <button type="button" class="number" onclick="secondOperation();numberFour()">4</button>
+                <button type="button" class="number" onclick="secondOperation();numberFive()">5</button>
+                <button type="button" class="number" onclick="secondOperation();numberSix()">6</button>
+                <button type="button" class="operator" onclick="clickCounter();operateIndicator();substractOperator();">-</button>
+                <button type="button" class="number" onclick="secondOperation();numberOne()">1</button>
+                <button type="button" class="number" onclick="secondOperation();numberTwo()">2</button>
+                <button type="button" class="number" onclick="secondOperation();numberThree()">3</button>
+                <button type="button" class="operator" onclick="clickCounter();operateIndicator();multiplyOperator();">X</button>
+                <button type="button" class="number" onclick="secondOperation();numberZero()">0</button>
+                <button type="button" class="number" onclick="decimal();decimalCount();">.</button>
+                <button type="button" class="operator" onclick="clickCounter();operateIndicator();divideOperator();">➗</button>
+                <button type="button" class="operator" onclick="storeValue2();operate();restartCounter();">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

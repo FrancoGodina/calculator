@@ -1,0 +1,97 @@
+.page {
+    margin: 250px;
+    size: 100%;
+    background-color: darkgrey;
+}
+#clear {
+    background-color: #F13C20;
+    border-radius: 8px; 
+    border: 2px rgb(202, 49, 49); 
+    color: white;  
+    text-align: center;
+    width: 110px;
+    height: 40px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 25px;
+    margin: auto;
+}
+#clear:active {
+    background-color: rgb(240, 38, 38);
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
+}
+#del {
+    background-color: #f1af21;
+    border-radius: 8px; 
+    border: 2px rgb(202, 49, 49); 
+    color: white;  
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    border: none;
+    font-size: 25px;
+}
+#del:active {
+    background-color: #f1af21;
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
+}
+#calculator {
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+    height: 280px;
+    background-color: #5CDB95;
+    border-radius: 40px;
+    margin: auto;
+}
+#mainbox {
+    margin: auto;
+}
+#upper {
+    justify-content: center;
+}
+#buttonContainer {
+    width: 700px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 4px;
+    margin: auto;
+}
+
+#display {
+    width: 500px;
+    height: 40px;
+    margin-left: 2px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 30px;
+}
+
+.number {
+    background-color: #05386B;
+    border: 3px;
+    border-radius: 12px;
+    font-size: 30px;
+    color: white;
+}
+.number:active {
+    background-color: rgb(245, 89, 89);
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
+  }
+.operator {
+    background-color: #379683;
+    border: none;
+    border-radius: 12px;
+    font-size: 30px;
+}
+.operator:active {
+    background-color:rgb(26, 241, 19);
+    box-shadow: 0 2px #666;
+    transform: translateY(1px);
+}
